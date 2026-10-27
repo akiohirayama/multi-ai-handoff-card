@@ -1,0 +1,13 @@
+{
+  "task": "what was asked, in one sentence",
+  "claimed_result": "what the AI says it did",
+  "risk_tier": "auto | auto-then-verify | human-approval",
+  "risk_reason": "why this tier",
+  "evidence": [
+    { "check": "what was checked", "checked_by": "script / fresh-context run / human (not the same AI run)", "result": "pass | fail | unclear" }
+  ],
+  "changed": ["pages, files or systems touched"],
+  "rollback": { "how": "how to undo it", "who": "who can undo it" },
+  "open_items": ["anything unverified, ambiguous or skipped"],
+  "approved_by": "a human, or the rule that allowed auto-approval"
+}
