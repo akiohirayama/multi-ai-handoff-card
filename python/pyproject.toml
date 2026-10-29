@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi-ai-handoff-card"
+version = "0.1.0"
+description = "Check whether AI work is done or only reported, using the Multi-AI Handoff & Approval Card."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "CC-BY-4.0"
+authors = [{ name = "AKIO HIRAYAMA" }]
+keywords = ["ai agents", "multi-agent", "verification", "human-in-the-loop", "handoff"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+Homepage = "https://akiohirayama.com/"
+Source = "https://github.com/akiohirayama/multi-ai-handoff-card"
+Documentation = "https://akiohirayama.github.io/"
+"Try it in the browser" = "https://huggingface.co/spaces/AKIOHIRAYAMA/handoff-card-checker"
+
+[project.scripts]
+handoff-card = "multi_ai_handoff_card.cli:main"
